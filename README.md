@@ -62,6 +62,7 @@ Open maven settings($MAVEN_HOME/conf/settings.xml) file and add following snippe
   
 2. Configure pom.xml of your project
   Make sure the following snippet exists in pom.xml
+  
        <distributionManagement>
                 <snapshotRepository>
                    <id>nexusRepo</id>
