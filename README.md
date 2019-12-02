@@ -62,21 +62,14 @@ Open maven settings($MAVEN_HOME/conf/settings.xml) file and add following snippe
   
 2. Configure pom.xml of your project
   Make sure the following snippet exists in pom.xml
+       <distributionManagement>
+                <snapshotRepository>
+                   <id>nexusRepo</id>
+                   <url>http://13.233.230.166:8081/repository/maven-snapshots/</url>
+                </snapshotRepository>
 
-    <distributionManagement>
-         <snapshotRepository>
-         
-              <id>nexusRepo</id>
-              
-              <url>http://13.233.230.166:8081/repository/maven-snapshots/</url>
-              
-         </snapshotRepository>
-          <repository>
-          
-            <id>nexusRepo</id>
-            
-            <url>http://13.233.230.166:8081/repository/maven-releases/</url>
-            
-          </repository>
-          
-      </distributionManagement>
+               <repository>
+                   <id>nexusRepo</id>
+                   <url>http://13.233.230.166:8081/repository/maven-releases/</url>
+               </repository>
+          </distributionManagement>
